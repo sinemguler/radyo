@@ -1,0 +1,132 @@
+@charset "utf-8";
+.container-fluid {
+    background: #00A3C0;
+    margin-bottom: 10px
+}
+.footer-menu a {
+    color: #fff;
+    font-family: 'MontserratMedium';
+    font-size: 15px;
+    transition: all 0.25s ease;
+}
+.footer-app h3 {
+    color: #fff;
+    font-family: 'MontserratMedium';
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.footer-menu a:hover {
+    color: black;
+}
+.footer-wrapper {
+    text-align: center;
+}
+.footer-menu li {
+    padding: 10px 10px;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+}
+ul.footer-menu {
+    display: flex;
+    /*yazıları yan yana aldık*/
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(255 255 255 / 35%);
+}
+.fGeneral {
+    display: none;
+}
+.footer-app-icons {
+    display: flex;
+    justify-content: center;
+}
+.footer-app-icons a {
+    margin: 5px;
+}
+.footer {
+    background: #3A3F51;
+}
+.marquee-footer {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 36px;
+    background: linear-gradient(90deg, #191F38 0%, #00A3C0 53.04%, #191F38 100%);
+}
+.frekance ul {
+    display: flex;
+}
+.frekance ul>li {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'MontserratMedium';
+    line-height: 17px;
+    margin-right: 10px;
+    padding: 0px 10px;
+}
+.marquee-footer>span {
+    color: #fff;
+    font-weight: 400px;
+    line-height: 17px;
+    border-right: 2px solid #fff;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+.frekance>ul>li>span {
+    font-family: 'MontserratBold';
+    font-size: 14px;
+    color: #fff;
+    text-align: right;
+    line-height: 17px;
+    margin-left: 10px;
+}
+.footer-fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+.footer-app {
+    width: 100%;
+    text-align: center;
+}
+.fGeneral {
+    display: none;
+}
+@media (min-width:768px){
+    ul.footer-menu {
+        justify-content: start;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .footer-app {
+        width: auto;
+        text-align: left;
+    }
+    .footer-app h3 {
+        padding: 10px;
+        margin-bottom: 0;
+    }
+    .tekFooter .list {
+        margin: 0;
+    }
+    .fGeneral {
+        display: block;
+    }
+    .footer-wrapper {
+        padding-bottom: 0;
+    }
+}
+
+
+

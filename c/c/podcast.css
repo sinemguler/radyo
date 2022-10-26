@@ -1,0 +1,182 @@
+@charset "utf-8";
+.podcast-menu {
+    margin-bottom: 50px;
+    padding: 50px 0px;
+    position: relative;
+}
+.podcast-menu:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    height: 100%;
+    background: url(../i/mask.png);
+    filter: brightness(0) invert(1);
+    /*HTML elemanlarına parlaklık vermek için brightness değeri kullanılır*/
+    opacity: 0.15;
+    pointer-events: none;
+}
+.podcast-title-first h3,
+.podcast-title-first a {
+    font-family: 'MontserratBold';
+    line-height: 44px;
+    color: #fff;
+    font-size: 23px;
+    display: block;
+    padding-top: 10px;
+    transition: all 0.25s ease;
+}
+.podcast-title-second h3,
+.podcast-title-second a {
+    line-height: 35px;
+    font-size: 22px;
+    font-family: 'MontserratBold';
+    color: #fff;
+    transition: all 0.25s ease;
+}
+.podcast-title-third h3,
+.podcast-title-third a {
+    line-height: 26px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    transition: all 0.25s ease;
+}
+.podcast-title-first {
+    margin-bottom: 15px;
+}
+.podcast-title-second {
+    margin-bottom: 24px;
+}
+.podcast-title-third {
+    margin-bottom: 30px;
+}
+.podcast-img.all {
+    border-radius: 10px;
+}
+.all-button {
+    width: 98px;
+    height: 40px;
+    background-color: #131A2E;
+    border: none;
+    padding: 13px 0px;
+    color: #fff!important;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    float: right;
+    text-align: center;
+}
+.all-button:hover {
+    background: #00A3C0;
+}
+.podcast-title-third a:hover {
+    color: #00A3C0;
+}
+.podcast-title-first a:hover {
+    color: #00A3C0;
+}
+.podcast-title-second a:hover {
+    color: #00A3C0;
+}
+.programs-title {
+    font-family: 'MontserratBold';
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+}
+.app-store-wrapper {
+    background: linear-gradient(rgb(34, 148, 250) 0%, rgb(0, 131, 249) 100%);
+    height: 170px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+.play-store-wrapper {
+    background: linear-gradient(rgb(16, 195, 209) 0%, rgb(0, 179, 193) 100%);
+    height: 111px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+}
+.programs-app {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+.text-right {
+    text-align: right;
+}
+.podcast-image img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+.podcast-image .link-holder:hover .program-icon{
+    opacity: 1; 
+    visibility: visible; 
+    z-index: 3;
+}
+.program-icon { 
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%; 
+    width: 52px;
+    height: 52px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1; 
+    transition: all 0.25s ease 0s; 
+}
+.podcast-icon { 
+    background: url("../i/play.svg") no-repeat; 
+    z-index: 3; 
+}
+.play-icon {
+    background: url("../i/play.png") no-repeat;
+     z-index: 3; 
+}
+@media (min-width:768px) {
+    .play-store-wrapper {
+        height: 172px;
+    }
+    .app-store-wrapper {
+        height: 170px;
+    }
+}
+@media (min-width:992px) {
+    .play-store-wrapper {
+        height: 132px;
+    }
+    .app-store-wrapper {
+        height: 180px;
+    }
+    .podcast-title-second h3, .podcast-title-second a {
+        font-size: 28px;
+    }
+    .podcast-title-third h3, .podcast-title-third a {
+        font-size: 18px;
+    }
+    .podcast-title-second {
+         margin-bottom: 30px;
+    }
+    .podcast-title-first h3, .podcast-title-first a {
+        font-size: 36px;
+    }
+    .podcast-title-first {
+         margin-bottom: 60px;
+    }
+}
+@media (min-width:1441px) {
+    .play-store-wrapper {
+        height: 167px;
+    }
+    .app-store-wrapper {
+        height: 180px;
+    }
+}

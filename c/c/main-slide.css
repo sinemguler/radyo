@@ -1,0 +1,173 @@
+@charset "utf-8";
+.main-slide-area {
+    padding: 90px 0px 127px;
+    position: relative;
+    overflow:hidden;
+}
+.main-slide .box-item .link-holder {
+    width: 100%;
+    padding-right: 15px;
+}
+.main-slide .box-item .link-holder img {
+    width: 100%;
+    border-radius: 10px;
+}
+.main-slide-area .container {
+    position: relative;
+}
+.slide-text {
+    color: #fff!important;
+    height: 100%;
+    box-sizing: border-box;
+}
+.main-slide figure.box-item {
+    flex-wrap: wrap;
+    display: flex;
+}
+.slide-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 30px;
+}
+.slide-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+.main-slide-area .swiper-pagination {
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    position: relative;
+    margin-top: 20px;
+}
+.main-slide-area .swiper-pagination .swiper-pagination-bullet {
+    background-color: rgb(181, 183, 163);
+}
+.main-slide-area .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: rgb(255, 183, 0);
+}
+.main-slide .box-item figcaption {
+    width: 100%;
+    padding-left: 0px;
+}
+.model-type-2 {
+    position: absolute;
+    background: url(../i/model-type-2.png) no-repeat;
+    /*main cssde bu şekilde*/
+    width: 328px;
+    height: 476px;
+    bottom: -70px;
+}
+.model-type-1 {
+    position: absolute;
+    background: url(../i/model-type-1.png) no-repeat;
+    /*no repeat arka plandaki resmin tekrarlanmasını önlemek için*/
+    width: 236px;
+    height: 332px;
+    top: -99px;
+    /* - değer verdikçe yukarı çıkar*/
+}
+.model-type-3 {
+    position: absolute;
+    background: url(../i/model-type-3.png) no-repeat;
+    width: 244px;
+    height: 481px;
+    bottom: -18px;
+    right: 0;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    color:#fff;
+}
+.main-slide .swiper-button-next {
+    right: 20px;
+}
+.main-slide .swiper-button-prev {
+    left: 20px;
+}
+.main-slide .swiper-button-next ,.main-slide .swiper-button-prev {
+    top:35%;
+    display: none;
+}
+@media (min-width:768px) {
+    .slide-desc {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .main-slide .box-item .link-holder {
+        width: 60%;
+        padding-right: 15px;
+    }
+    .main-slide .box-item figcaption{
+        width: 40%;
+        padding-left: 15px;
+    }
+    .main-slide-area .swiper-pagination {
+        bottom: 0px;
+        right: 0px;
+        text-align: left;
+        width: 40%;
+        left: calc(60% + 10px);
+    }
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+        display: block;
+    }
+    h3.slide-title {
+        font-size: 23px;
+        line-height: 39px;
+    }
+    .main-slide .swiper-button-next {
+        right: calc(40% + 20px);
+    }
+    .main-slide .swiper-button-next ,.main-slide .swiper-button-prev {
+        top:50%;
+    }
+    .main-slide-area .swiper-pagination {
+        position: absolute
+    }
+    .main-slide .swiper-button-next, .main-slide .swiper-button-prev {
+        display: flex;
+    }
+}
+    @media (min-width:992px) {
+        .slide-desc {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        h3.slide-title {
+            font-size: 28px;
+            line-height: 37px;
+        }
+    }
+    @media (min-width:1441px) {
+        .slide-desc {
+            font-size: 17px;
+            line-height: 32px;
+        }
+        h3.slide-title {
+            font-size: 42px;
+            line-height: 51px;
+        }
+    }
+@media(max-width:767px){
+    .model-type-1 {
+        width: 120px;
+        height: 179px;
+        background-size: 100%;
+        top: -20px;
+    }
+    .model-type-3 {
+        width: 150px;
+        height: 296px;
+        background-size: 100%;
+        bottom: 0;
+    }
+    .model-type-2 {
+        display: none;
+    }
+    .main-slide-area {
+        padding: 60px 0 20px;
+    }
+}

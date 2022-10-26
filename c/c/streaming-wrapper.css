@@ -1,0 +1,87 @@
+@charset "utf-8";
+.streaming-wrapper {
+    background: #00A3C0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+.streaming-item {
+    display: flex;
+    padding: 6px 16px 0 20px;
+    height: 80px;
+    margin: 10px 0;
+    justify-content: center;
+    flex-direction: column;
+    border-right: 1px solid #66c8d9;
+    width: 100%;
+    box-sizing: border-box;
+}
+.streaming-clock {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+}
+.streaming-title a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    transition: all 0.25s ease;
+}
+.swiper-streaming:after {
+    content: "";
+    /* before ve after da kesinlikle tanımlanması gerekiyor*/
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    height: 80px;
+    width: 1px;
+    background: rgb(255 255 255 / 40%);
+}
+.swiper-streaming:before {
+    content: "";
+    /* before ve after da kesinlikle tanımlanması gerekiyor*/
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    height: 80px;
+    width: 1px;
+    background: rgb(255 255 255 / 40%);
+}
+.swiper-streaming {
+    padding: 0 50px;
+}
+.live-slider .swiper-button-next {
+    z-index: 9999;
+    right: 10px;
+    /*butonun yerini ayırlar*/
+}
+.now-clock {
+    width: 40px;
+    height: 20px;
+    font-size: 10px;
+    font-family: 'MontserratBold';
+    background: #fff;
+    border-radius: 5px 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 3px;
+}
+@media(min-width:576px) and (max-width:768px) {
+    .streaming-title a {
+        font-size: 11px;
+    }
+    .streaming-clock {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .streaming-item {
+        padding: 8px 13px 0 17px;
+    }
+}

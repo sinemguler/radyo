@@ -1,0 +1,128 @@
+@charset "utf-8";
+.container.main {
+    padding-top: 20px;
+}
+.streaming-header {
+    background-color: #00a3c0;
+    border-radius: 10px;
+}
+.streamig-title {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'MontserratBold';
+    padding: 16px;
+}
+.streaming-week>ul>li span:first-child {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'MontserratBold';
+}
+.streaming-week span {
+    color: #fff;
+    font-size: 14px;
+}
+.streaming-week span {
+    display: block;
+    margin: 10px 40px 10px;
+}
+.streaming-week span {
+    padding-bottom: 5px;
+}
+.streaming-week ul {
+    display: flex;
+}
+.broadcast ul {
+    color: #fff;
+    margin: 10px;
+}
+.broadcast {
+    margin: 0;
+}
+.broadcast li {
+    font-size: 15px;
+    display: flex;
+    border-bottom: 1px solid #dddddd4d;
+}
+.broadcast .time, .program{
+    display: flex;
+    height: 75px;
+    align-items: center;
+    padding: 10px;
+    flex-shrink: 0;
+}
+.broadcast .program {
+    width: calc(100% - 75px);
+    line-height: 55px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 75px);
+    display: block;
+}
+.broadcast .time{
+    width: 75px;
+    border-right: 1px solid #dddddd4d;
+}
+.streaming-week li:not(:first-child) a:before {
+    content: "";
+    position: absolute;
+    border-left: 1px solid #fff;
+    height: 48px;
+    top: 10px;
+}
+.streaming-week ul li.active:after {
+    content: "";
+    position: absolute;
+    background-color: #242c4847;
+    height: 65px;
+    top: 0;
+    width: 68px;
+    z-index: 1;
+    left: 18%;
+    pointer-events: none;
+    border-radius: 10px;
+}
+.broadcast li.now-clock{
+    background-color: #00a3c0;
+}
+.broadcast li.now-clock:after {
+    content: "şimdi";
+    border-radius: 5px 5px 5px 0;
+    background-color: #fff;
+    position: absolute;
+    font-size: 13px;
+    color: black;
+    padding: 2px;
+    margin: 5px 5px 5px 10px;
+}
+li.now-clock span.time:after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #ff0078;
+    border-radius: 100%;
+    position: absolute;
+    margin: 6px 6px -33px 1px;
+}
+.tab-content.hide{
+    display: none;
+}
+.tab-content.active{
+    display: block;
+}
+.streaming-week ul li{
+    position: relative;
+}
+@media(min-width:768px){
+    .broadcast li {
+        font-size: 20px;
+    }
+    .broadcast .program{
+    }
+}
+@media(max-width:1441px){
+    .streaming-week ul {
+        overflow: auto;
+    }
+}

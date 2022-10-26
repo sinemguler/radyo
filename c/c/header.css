@@ -1,0 +1,462 @@
+@charset "utf-8";
+.header-top {
+    height: 52px;
+    background: linear-gradient(90deg, rgb(25, 31, 56) 0%, rgb(0, 163, 192) 53.04%, rgb(25, 31, 56) 100%);
+}
+.header-left {
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    /*Yazı tipinin ne kadar kalın ya da ince görüneceği belirlenir.*/
+}
+.header-left span {
+    text-align: center;
+}
+.header-left span {
+    display: block;
+    /*alt alta sıralanır*/
+}
+.alt-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.alt-header span {
+    font-weight: 600;
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    /* ilk öğe solda, son öğe sağda diğerleri ortada olacak şekilde sıralanır*/
+    align-items: center;
+    height: 100%;
+}
+.header-play {
+    display: flex;
+    align-items: center;
+}
+.header-play>a {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.header-play>a:hover {
+    opacity: 0.7;
+}
+.header-area {
+    display: block;
+}
+.header-bottom {
+    height: 80px;
+    position: sticky;
+    background: #191F38;
+    z-index: 999;
+    top: 0;
+}
+.header-bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    height: 100%;
+    align-items: center;
+}
+.header-menu>ul {
+    /* < işareti hemen ardından gelen nesnleri kapsar*/
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.header-menu>ul>li>a {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    height: 80px;
+    margin: 0px 16px;
+    line-height: 17px;
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+.header-menu ul li a:hover {
+    color: #00a3c0;
+}
+.header-menu>ul>li:first-child>a {
+    margin-left: 0;
+}
+.open-menu {
+    position: absolute;
+    background: #191F38;
+    line-height: 17px;
+    font-size: 14px;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    /*Elementi gizler, sayfada kapladığı boşluk kalır.*/
+    z-index: -1;
+    transition: all 0.25s ease;
+    list-style-type: none;
+    /* ul etiketindeki simgeleri kaldırır*/
+}
+.header-menu>ul>li {
+    position: relative;
+}
+.open-menu>li>a {
+    color: #BBC7CA;
+    display: block;
+    text-decoration: none;
+    /* altı çizili olan yazıyı çizgisiz yapmak için kulllanılır*/
+    padding: 10px 20px;
+    opacity: 0.9;
+    transition: all 0.25s ease;
+}
+.header-menu>ul>li:hover .open-menu {
+    /* > işareti hemen ardından gelen nesneler için kullanılır*/
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+}
+.menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.weather-area {
+    display: none;
+    align-items: center;
+    font-size: 10px;
+    margin-right: 20px;
+}
+.weather-area a svg {
+    margin-right: 7px;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+.select-area {
+    background: #fff;
+    display: none;
+    position: relative;
+    align-items: center;
+    margin-right: 23px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.select-area select {
+    background: none;
+    border: 0;
+    padding: 7px 14px 7px 7px;
+}
+.prayer-time {
+    display: none;
+    align-items: center;
+    position: relative;
+    padding: 0 30px 0 20px;
+}
+.prayer-time a {
+    display: flex;
+    align-items: center;
+}
+#vol {
+    /*id leri tanımlamak için kullanılır*/
+    display: flex;
+}
+.vol-icon {
+    margin: 0 20px 0 31px;
+}
+#volume {
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+.pr-text {
+    color: #fff;
+    font-size: 10px;
+    line-height: 11px;
+}
+a {
+    /*yazının altı çizgili olmaması için*/
+    display: block;
+    outline: none;
+    text-decoration: none;
+}
+span.icon {
+    margin-right: 5px;
+}
+.prayer-time:before {
+    content: "";
+    /* before ve after da kesinlikle tanımlanması gerekiyor*/
+    position: absolute;
+    left: 0;
+    height: 16px;
+    width: 1px;
+    background: rgb(255 255 255 / 40%);
+}
+.prayer-time .pr-text span:last-child {
+    display: block;
+}
+.social-list ul {
+    display: flex;
+    list-style-type: none;
+}
+.social-list ul li a {
+    background-color: #02111D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    transition: all 0.25s ease;
+    border-radius: 100%;
+    /*yuvarlak kenar özelliği verme işine yarıyor*/
+}
+.social-list ul li+li {
+    margin-left: 8px;
+}
+.social-list {
+    margin-right: 22px;
+    display: none;
+}
+.social-list ul li a:hover {
+    background: #00A3C0;
+}
+.social-list ul li a:hover svg {
+    filter: brightness(0) invert(1);
+    /*HTML elemanlarına parlaklık vermek için brightness değeri kullanılır.Parlaklık değeri olarak 100 değerinin altında verildiğinde parlaklık azalacak 100 değerinin üzerinde değer verildiğinde parlaklık artacaktır.
+    Parlaklık değeri olarak 100 verildiğinde herhangi bir etki etmeyecektir.
+    HTML elemanlarına ait renkleri ters çevirmek için invert değeri kullanılır. svg ye background verilmez */
+}
+#master {
+    /*çizgiyle ilgili ayarlar*/
+    width: 100%;
+    height: 0.5px;
+    /*çizginin kalınlığını ayarlar*/
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range {
+    /*aralık*/
+    top: -1px;
+    height: 100%;
+}
+.ui-slider .ui-slider-handle {
+    /*butonla ilgili değerler*/
+    position: absolute;
+    z-index: 2;
+    width: 13px;
+    /*yuvarlak butonun genişliğini ayarlar*/
+    height: 13px;
+    cursor: default;
+    border-radius: 100%;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -7px;
+    /*yuvarlak butonun çizgide nerede duracağını ayarlar*/
+    margin-left: -2px;
+    cursor: pointer;
+}
+.ui-widget.ui-widget-content {
+    /*volume değerlerini ayarlamak için*/
+    border: 1px solid #fff;
+}
+.header-menu>ul>li>a>svg {
+    position: relative;
+    left: 10px;
+}
+.select-area svg{
+    position: absolute;
+    right: 6px;
+}
+.menu-block{
+    flex-shrink: 0;
+}
+.main-logo {
+    display: none;
+}
+.header-menu.type-02 {
+    display: none;
+}
+.hamburger-menu img {
+    width: 25px;
+    filter: brightness(0) invert(1);
+}
+.vav-radio-mobile-logo img {
+    width: 68px;
+}
+.hamburger-menu,.vav-radio-mobile-logo,.mobile-menu {
+    display: block;
+}
+.mobile-menu {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(212deg, #191F38 0%, #00A3C0 53.04%, #191F38 100%);
+    padding: 60px 30px;
+    left: 0;
+    width: 70%;
+    left: -100%;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 1s ease;
+}
+.mobile-menu ul li a {
+    color: #fff;
+    padding: 10px 0;
+    border-top: 1px solid rgb(255 255 255 / 24%);
+}
+body.mobile-menu-active .mobile-menu {
+    visibility: visible;
+    z-index: 9999999999;
+    left: 0;
+}
+.close {
+    opacity: 1;
+    text-shadow: none;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+.close img {
+    width: 30px;
+    filter: brightness(0) invert(1);
+}
+.mobile-menu ul li:first-child a {
+    border: 0;
+}
+.mobile-menu-active {
+    overflow: hidden;
+}
+body:after {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 49%);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+body.mobile-menu-active:after {
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999;
+}
+@media (min-width:768px){
+    .header-menu>ul>li>a {
+        margin: 0px 5px;
+        font-size:10px
+    }
+    .header-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobile-button { display:none;}
+    .main-logo {
+        display: block;
+    }
+    .header-top {
+        background: #00A3C0;
+        height: 80px;
+    }
+    .header-left {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    #volume {
+        width: 60px;
+    }
+    .select-area, .weather-area,.prayer-time,.header-menu.type-02 {
+        display: flex;
+    }
+    .social-list {
+        display: block;
+    }
+     .header-left {
+        font-size: 16px;
+    } 
+    #volume {
+        width: 340px;
+    } 
+    .prayer-time {
+        padding: 0px 8px 0 8px;
+        font-size: 13px;
+    }
+    .weather-area {
+        margin-right: 5px;
+    }
+    .select-area {
+        margin-right: 5px;
+    }
+     .select-area select {
+        padding: 3px 9px 2px 4px;
+        font-size: 12px;
+    } 
+    .select-area svg {
+        right: 2px;
+    }
+    .header-menu>ul>li>a>svg {
+        left: 6px;
+    }
+    .social-list {
+        margin-right: 2px;
+    }
+    .social-list ul li+li {
+        margin-left: 2px;
+    }
+    .hamburger-menu,.vav-radio-mobile-logo,.mobile-menu {
+        display: none;
+    }
+}
+@media (min-width: 992px){
+    .header-menu>ul>li>a {
+     margin: 0px 11px;
+     font-size: 12px;
+    } 
+    .select-area svg {
+     right: 6px;
+    }
+    .select-area select {
+     padding: 5px 14px 6px 10px;
+     font-size: 16px;
+    }
+     .weather-area {
+      margin-right: 30px;
+    }
+     .prayer-time {
+      padding: 0px 13px 0px 9px;
+      font-size: 13px;
+    }
+     .prayer-time {
+      padding: 0px 13px 0px 9px;
+      font-size: 13px;
+    }
+     .select-area {
+      margin-right: 35px;
+    }
+}
+@media (min-width: 1200px){
+    #volume {width:450px;}
+}
+@media (min-width: 1441px){
+    .header-menu>ul>li>a {
+     margin: 0px 16px;
+     font-size: 14px;
+}   
+    .select-area{
+     margin-right: 48px;
+}
+}
+@media(max-width:320px){
+    #volume{
+        width: 58px;
+    }
+}

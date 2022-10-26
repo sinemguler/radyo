@@ -1,0 +1,46 @@
+@charset "utf-8";
+.right-advers .item {margin-bottom: 15px;border-bottom: 1px solid #5c6275;padding-bottom: 15px;text-align: center;}
+.podcast {margin-bottom: 20px;}
+.row.column-row{
+    align-items: flex-start;
+}
+.streaming {
+    margin-bottom: 30px;
+}
+.vav-item{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.column-right {
+    position: sticky;
+    top: 100px;
+    border-left: 2px solid #dddddd4d;
+}
+.podcast-image span {
+    color: #fff;
+    font-size: 17px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    max-height: 20px;
+    line-height: 1.2;
+}
+.podcast-widget li {
+    border-bottom: 1px solid #5c6275;
+    padding-top: 5px;
+}
+.podcast-image img {
+    padding: 5px;
+    border-radius: 10px;
+}
+.podcast-title > h2 {
+    color: #fff;
+    font-family: 'MontserratBold';
+    font-size: 22px;
+}
+.right-advers img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+.vav-img img {max-width: 100%;border-radius: 6px;}

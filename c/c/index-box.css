@@ -1,0 +1,42 @@
+@charset "utf-8";
+.box .box-item .text-box a {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    transition: all 0.25s ease;
+    font-weight: 600;
+}
+.box .box-item .text-box a:hover {
+    color: #00A3C0;
+}
+.box .img-holder img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    /*resim tüm alanı kapsar*/
+    height: auto;
+    display: block;
+}
+.box .box-item figcaption {
+    background: #191F38;
+    height: 97px;
+    padding: 20px 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+.box {}
+@media (min-width:767px) {
+    .box .box-item figcaption {
+        height: 144px;
+    }
+    .box .box-item .text-box a {
+        font-size: 18px;
+    }
+}
+@media (min-width:1441px) {
+    .box-block .box-item .norm-title a {
+        font-size: 23px;
+        line-height: 31px;
+    }
+    .box-block .box-item figcaption {
+        height: 126px;
+    }
+}

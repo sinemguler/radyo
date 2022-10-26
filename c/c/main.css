@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@charset "utf-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+
+/*htmlde hali hazırda geçerli olan kodları sıfırlamak için kullanılır(zero css)*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+lockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background: #242C48;
+    font-family: 'MontserratMedium';
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('../f/MontserratMedium.eot');
+    src: url('../f/MontserratMedium.eot') format('embedded-opentype'), url('../f/MontserratMedium.woff2') format('woff2'), url('../f/MontserratMedium.woff') format('woff'), url('../f/MontserratMedium.ttf') format('truetype'), url('../f/MontserratMedium.svg#MontserratMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'MontserratSemiBold';
+    src: url('../f/MontserratSemiBold.eot');
+    src: url('../f/MontserratSemiBold.eot') format('embedded-opentype'), url('../f/MontserratSemiBold.woff2') format('woff2'), url('../f/MontserratSemiBold.woff') format('woff'), url('../f/MontserratSemiBold.ttf') format('truetype'), url('../f/MontserratSemiBold.svg#MontserratSemiBold') format('svg');
+}
+
+@font-face {
+    font-family: 'MontserratLight';
+    src: url('../f/MontserratLight.eot');
+    src: url('../f/MontserratLight.eot') format('embedded-opentype'), url('../f/MontserratLight.woff2') format('woff2'), url('../f/MontserratLight.woff') format('woff'), url('../f/MontserratLight.ttf') format('truetype'), url('../f/Monts../fratLight.svg#MontserratLight') format('svg');
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('../f/MontserratBold.eot');
+    src: url('../f/MontserratBold.eot') format('embedded-opentype'), url('../f/MontserratBold.woff2') format('woff2'), url('../f/MontserratBold.woff') format('woff'), url('../f/MontserratBold.ttf') format('truetype'), url('../f/MontserratBold.svg#MontserratBold') format('svg');
+}
+
+.bg-gradient {
+    /*rengin geçişli olması için*/
+    background: radial-gradient(50% 429.81% at 50% 50%, rgb(61, 76, 118) 0%, rgb(36, 44, 72) 100%);
+}
+a {
+    /*yazının altı çizgili olmaması için*/
+    display: block;
+    outline: none;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+* {
+    /* * tüm hepsi anlamına gelir*/
+    box-sizing: border-box;
+    /* paddingleri sıfırlar paddingleri doğru konumlandırır*/
+}
+.box-form {
+    height: 100%;
+    background: #191F38;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+.form-item form {
+    text-align: right;
+}
+.advers-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    background: #191F38;
+    border-radius: 10px;
+    width: 100%;
+}
+.advers-box .item {
+    width: 300px;
+    height: 250px;
+}
+.contact-fix {
+    background-color: #fff;
+    height: 37px;
+    border: none;
+    padding: 15px 0px;
+    border-radius: 10px 10px 10px 0px;
+    font-family: 'MontserratBold';
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    float: right;
+    text-align: center;
+    position: fixed;
+    color: black;
+    z-index: 999;
+    bottom: 49px;
+    right: 3px;
+    font-size: 11px;
+    width: 79px;
+}
+header {
+    display: unset;
+}
+.contact-fixed .title:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 24px 0 0;
+    border-color: #ffffff transparent transparent transparent;
+    bottom: -11px;
+    left: 0;
+}
+@media (min-width: 1200px) {
+    .contact-fix {
+        width: 100px;
+        bottom: 50px;
+        right: 5px;
+        font-size: 14px;
+    }
+}

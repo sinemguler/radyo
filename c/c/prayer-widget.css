@@ -1,0 +1,109 @@
+@charset "utf-8";
+.prayer-widget {
+    background: rgb(25, 31, 56);
+    border-radius: 10px;
+    height: 100%;
+    padding: 16px 30px 20px;
+}
+.prayer-widget h3 {
+    font-family: 'MontserratBold';
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.prayer-times>.item {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    justify-content: space-between;
+    color: #fff;
+    letter-spacing: 0.04em;
+    font-size: 14px;
+    font-family: 'MontserratMedium';
+    background: #131A2E;
+    border-radius: 20px;
+}
+
+.item-active {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    justify-content: space-between;
+    color: #fff;
+    letter-spacing: 0.04em;
+    font-size: 14px;
+    font-family: 'MontserratMedium';
+    background: #00A3C0;
+    border-radius: 20px;
+}
+.prayer-select{
+    border: 0;
+    width: 100%;
+    height: 30px;
+    padding-left: 28px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: -0.01em;
+    line-height: 24px;
+    font-family: 'MontserratMedium';
+    background: #131A2E;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}  
+.prayer-select-menu {
+    position: relative;
+}
+.prayer-times .item + .item {
+    margin-top: 2px;
+}
+.prayer-select-menu svg {
+    right: 30px;
+    position: absolute;
+    top: 15px;
+    pointer-events: none;
+}
+@media(min-width:768px){
+    .prayer-widget h3 {
+        font-size: 14px;
+    }
+   .prayer-select{
+        height: 38px;
+        font-size: 14px;
+    }
+    .prayer-select-menu svg {
+        top: 12px;
+    } 
+    .item-active {
+        height: 26px;
+ }  
+ .prayer-times>.item {
+    height: 26px;
+    padding: 0 35px;
+ }
+}
+ @media(min-width:992px){
+    .prayer-widget h3 {
+        font-size: 15px;
+    }
+   .prayer-select{
+        height: 35px;
+        font-size: 14px;
+    }
+}
+   @media(min-width:1441px){
+    .prayer-widget h3 {
+        font-size: 15px;
+    }
+   .prayer-select{
+        height: 35px;
+        font-size: 14px;
+    }
+    .prayer-times>.item {
+        height: 40px;
+   }
+}

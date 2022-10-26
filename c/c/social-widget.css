@@ -1,0 +1,82 @@
+@charset "utf-8";
+.social-widget h3{
+    letter-spacing: 0.02em;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'MontserratBold';
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.social-widget {
+    height: 100%;
+    border-radius: 15px;
+    background: #191F38;
+    padding: 20px 0px;
+}
+.social-widget ul {
+    margin: auto;
+    display: table;
+}
+.social-widget a {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'MontserratMedium';
+    text-align: center;
+    border-radius: 40px;
+    width: 260px;
+    align-items: center;
+    display: flex;
+    height: 44px;
+    padding-left: 50px;
+    transition: all 0.25s ease;
+}
+.social-widget .icon{
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-right: 42px; 
+}
+.social-widget .facebook a{
+    background: #435A94;
+}
+.social-widget .twitter a{
+    background: #4EA0EB;
+}
+.social-widget .youtube a{
+    background: #E53228;
+}
+.social-widget .instagram a{
+    background: linear-gradient(266.12deg, #834694 6.45%, #CD4D7E 41.87%, #EC8452 73.7%, #F7E363 105.01%);
+}
+.social-widget .facebook a:hover {
+    background: #3a476c;
+}
+.social-widget .twitter a:hover {
+    background: #2588e3;
+}
+.social-widget .youtube a:hover {
+    background: #bf433c;
+}
+.social-widget .instagram a:hover {
+    background: #CD4D7E;
+}
+.social-widget ul li + li {
+    margin-top: 15px;
+}
+.social-widget ul {
+    margin: auto;
+    display: table;
+}
+@media (min-width:768px) and ( max-width:992px){
+    .social-widget h3 {
+        font-size: 13px;
+    }
+    .social-widget a {
+        padding-left: 44px;
+        font-size: 12px;
+        width: 198px;
+        height: 37px;
+    }
+}   

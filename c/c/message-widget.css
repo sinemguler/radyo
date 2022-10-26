@@ -1,0 +1,71 @@
+@charset "utf-8";
+ .input-text-name , .input-textarea{
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #131A2E;
+    border: 1px solid #131A2E;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    outline: none;
+    transition: all 0.25s ease;
+    color: #fff;
+    font-family: 'MontserratMedium';
+}
+.input-textarea {
+    padding: 15px 10px;
+    resize: none;
+}
+.input-text-name:focus, .input-textarea:focus {
+    border-color:#43f3fc;
+}
+.send-button {
+    width: 136px;
+    height: 50px;
+    background-color: #131A2E;
+    border: none;
+    padding: 13px 0px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.send-button:hover {
+    background-color: #00a3c0;
+}
+.live-text {
+    width: 190px;
+    padding: 10px 15px;
+    border-radius:10px 10px 0px 10px;
+    background: #131A2E;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-left: auto;
+}
+.form-item > .live-text:after {
+    content: "";
+    background: url(../i/polygon.png);
+    position: absolute;
+    height: 16px;
+    width: 43px;
+    top: 78px;
+    filter: brightness(0.1);
+    right: 40px;
+}
+.input-text-name {
+    margin-top: 5px;
+}
+@media (min-width:1200px) {
+    .input-textarea { height:50px;}
+}
+@media (min-width:1440px) {
+    .input-textarea { height:auto;}
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+.streaming-area .title{
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 15px 0px 15px 15px; 
+}
+.streaming-area{
+    background: radial-gradient(50% 429.81% at 50% 50%, rgb(61, 76, 118) 0%, rgb(36, 44, 72) 100%);
+}
